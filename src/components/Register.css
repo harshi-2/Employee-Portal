@@ -1,0 +1,107 @@
+/* Register.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f7f6;
+}
+
+.register-container {
+  background-color: rgba(255, 255, 255, 0); /* Adjusted for transparency */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.header {
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space between title and button */
+  align-items: center; /* Vertically center the items */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.home-button {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.home-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0; /* Remove default margin for header */
+  text-align: center;
+}
+
+form label {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.confirm-password {
+  margin-top: -10px;
+}
+
+/* Ensure all input fields have the same box styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #ddd; /* Consistent border */
+  border-radius: 4px; /* Consistent border-radius */
+  font-size: 16px; /* Consistent font size */
+  padding: 10px; /* Consistent padding */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Consistent focus color */
+}

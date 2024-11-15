@@ -1,0 +1,133 @@
+/* Global styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+/* Dashboard container */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Header (menu) styles */
+.header {
+    display: flex;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.9);
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Allow positioning of logo */
+}
+
+.header .nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav-menu li {
+    margin: 0 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header .nav-menu li:hover {
+    color: #3498db;
+}
+
+.header-logo {
+    position: absolute;
+    right: 50px;  /* Adjust the value as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Center the logo vertically */
+    height: 50px;  /* Adjust logo size */
+    width: 50px;
+    
+}
+
+/* Greeting and employee info section */
+.greeting-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.greeting {
+    margin-right: 15px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.employee-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.employee-img {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.employee-email {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(236, 240, 241, 0.9);
+    border-radius: 5px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content h4 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Adds space between the buttons */
+    margin-top: 20px; /* Adjusts vertical spacing if needed */
+}
+
+/* Shared Button styles */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

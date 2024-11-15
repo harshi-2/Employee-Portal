@@ -1,0 +1,52 @@
+.employee-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* Logo */
+.logo {
+  position: absolute;
+  top: 10px; /* Adjusted for position */
+  left: 10px; /* Positioning the logo on the left side */
+  height: 120px;
+  width: 120px;
+  border-radius: 0;
+}
+  
+  .profile-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .profile-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
